@@ -1,0 +1,45 @@
+# Lil-UZI-
+liar = "C:/Users/Luis Rios/Documents/Audacity/BBBB.wav"
+
+use_bpm 150
+use_synth :dsaw
+
+
+sample liar
+sleep 4
+live_loop :Main do
+  play :eb4 , sustain: 2
+  sleep 2
+  play :f4  , sustain: 2
+  sleep 2
+  
+  play :gb4 , sustain: 2
+  sleep 2
+  play :db5 , sustain: 2
+  sleep 2
+  
+  play :db5 , sustain: 2
+  sleep 2
+  play :r
+  sleep 0.5
+  play :bb4 , sustain: 2
+  sleep 0.5
+  play :eb5 , sustain: 2
+  sleep 1
+  
+  play :db5 , sustain: 2
+  sleep 2
+  play :f5 , sustain: 2
+  sleep 1
+  play :bb5 , sustain: 2
+  sleep 1
+end
+
+sleep 15
+live_loop :doo do
+  4.times do
+    sample :drum_bass_hard
+    sleep 0.5
+  end
+  sleep 15
+end
